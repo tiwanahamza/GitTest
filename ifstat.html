@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array</title>
+</head>
+<body>
+    <p>What is the Magic Word</p>
+    <p><input type="text" id="magicWord"></p>
+    <p><button id="checkMagicWord">Enter</button></p>
+    <script type="text/javascript">
+        document.getElementById("checkMagicWord").onclick = function(){
+            var magicwordentered = document.getElementById("magicWord").value;
+            var magicWord = "Buddy";
+            if (magicwordentered == magicWord) {
+                alert("Yeh Cheiz mere aziz!");
+            }else {
+                alert("Abey yr kya kr rhy ho?");
+            }
+        }
+
+    </script>
+</body>
+</html>

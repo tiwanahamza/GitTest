@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>While loops</title>
+</head>
+<body>
+    <p>How many fingers am I holding up?</p>
+    <p><select id="myNumber">
+            <option>0</option> 
+            <option>1</option> 
+            <option>2</option> 
+            <option>3</option> 
+            <option>4</option> 
+            <option>5</option>
+        </select>     
+        <button id="guess">Guess</button>
+    </p>
+    <script type="text/javascript">
+    function doaGuess(correctanswer){
+
+        var guess = Math.random();
+            guess = guess * 6;
+            guess = Math.floor(guess);
+            if (guess == correctanswer) {
+                return(true);
+            }   else {
+                return(false);
+            }
+    }
+    document.getElementById("guess").onclick = function(){
+        var myNumber = document.getElementById("myNumber").value;
+        var gotIt = false;
+        var nubmberofguesses = 1;
+        while(gotIt == false) {
+            if (doaGuess(myNumber) == true) {
+                gotIt = true;
+                alert("Got It! It was a " + myNumber + ". It took me " + nubmberofguesses + " guesses.");
+            }   else {
+                nubmberofguesses++;
+            }
+            
+        }
+        
+ }
+    
+    </script>
+</body>
+</html>

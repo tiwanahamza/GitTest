@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <div id="tweetdiv">
+
+    </div>   
+    <script type="text/javascript">
+        var tweetString = "";
+        var tweets = ["Hello Jee", "Ki hal ay!", "Thk ho naa!", "Chuti kr shabash"];
+        
+        for(var i = 0; i < tweets.length; i++){
+            tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+        }
+        document.getElementById("tweetdiv").innerHTML = tweetString;
+   </script> 
+</body>
+</html>

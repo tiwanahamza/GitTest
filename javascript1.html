@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>JavaScript</title>
+</head>
+
+<body>
+  <p id="text">Hello World!</p>
+  
+  <button id ="myButton">Change Text</button>
+  <p id="text2">Muhammad Hamza </p>
+  <button id ="myButton2">Append Text</button>
+  <p id = "text3"></p>
+  <button id ="myButton3">Append Text</button>
+  <p id = "text4">Hello Jee</p>
+  <button id ="myButton4">Style Text</button>
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function(){
+          document.getElementById("text").innerHTML = "Hello";
+        }; 
+        document.getElementById("myButton2").onclick = function(){
+          document.getElementById("text2").innerHTML = "My full name  " +  document.getElementById("text2").innerHTML + "Tiwana";
+        };
+        document.getElementById("myButton3").onclick = function(){
+          document.getElementById("text3").innerHTML = "Hello Buddy!";
+        }; 
+        document.getElementById("myButton4").onclick = function() {
+          document.getElementById("text4").style.backgroundColor = "yellow  "; 
+        };
+    </script>
+
+</body>
+
+</html> 
